@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container,
+.header,
+.sidebar,
+.main-content {
+    display: grid;
+}
+
+.container {
+    min-height: inherit;
+    grid-template: 1fr 3.5fr / 1fr 4.5fr;
+}
+
+.header {
+    grid-column: 2 / 3;
+}
+
+.sidebar {
+    grid-row: 1 / 3;
+}
