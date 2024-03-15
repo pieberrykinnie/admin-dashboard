@@ -190,12 +190,12 @@ body {
 
 .project-card {
     background-color: white;
-    min-height: 200px;
+    min-height: 240px;
     border-radius: 8px;
     box-sizing: border-box;
     border-left: 8px solid #F0B429;
     box-shadow: var(--shadow);
-    padding: 16px;
+    padding: 32px 16px 16px;
 
     display: grid;
     grid-template-rows: auto 32px;
@@ -228,11 +228,24 @@ body {
     background-color: white;
     border-radius: 8px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 32px;
+    grid-template-rows: repeat(3, auto);
+    padding: 8px 32px;
+    box-shadow: var(--shadow);
+}
+
+.announcement:not(:last-child) {
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.announcement {
+    color: #636363;
+    font-size: 0.9rem;
+    padding: 24px 8px;
 }
 
 .announcement-title {
     font-weight: bold;
+    color: black;
+    font-size: 1rem;
     margin-bottom: 4px;
 }
