@@ -201,9 +201,8 @@ body {
     grid-template-rows: auto 32px;
 }
 
-.card-description {
+.card-text {
     color: #636363;
-    font-size: 0.8rem;
 }
 
 .card-heading {
@@ -223,4 +222,17 @@ body {
 
 .card-icons > .icon {
     fill: #333;
+}
+
+.announcement-holder {
+    background-color: white;
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 32px;
+}
+
+.announcement-title {
+    font-weight: bold;
+    margin-bottom: 4px;
 }
